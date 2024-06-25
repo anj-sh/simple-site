@@ -1,0 +1,66 @@
+@mixin  flex($ai,$jc){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin flex2 ($fd, $ai, $jc) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin flex3 ($fw, $ai, $jc) {
+    display: flex;
+    flex-wrap: $fw;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin font ($fw, $fs) {
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+@mixin p($pt,$pb) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin padgap ($pd, $gap) {
+    padding: $pd;
+    gap: $gap;
+}
+
+@mixin mg-gap ($mg, $gap) {
+    margin: $mg;
+    gap: $gap;
+}
+
+@mixin phone {
+    @media screen and (min-width: 375px) and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin dekstop {
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+
+
